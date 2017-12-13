@@ -37,7 +37,6 @@ Test a warning body
 ****
 
 **Warning**
-
   This is a warning body
 
 ****
