@@ -10,6 +10,39 @@ This section describes how to set up a basic application cluster using BDCF comp
 	:local:
 	:depth: 2
 
+
+Test a thematic break with *
+
+* * * * *
+
+Test a thematic break with _
+
+_ _ _ _ _
+
+Test a thematic break with -
+
+- - - - -
+
+.. role:: red
+
+This text is :red:`colored red` and so is :red:`this`
+
+.. role:: orange
+
+This text is :orange:`colored orange` and so is :orange:`this`
+
+
+Test a warning body
+
+* * * * *
+
+.. role:: red
+
+:red:`Warning`
+  This is a warning body
+
+* * * * *
+
 .. _getting_started_requirements_section:
 
 Requirements
