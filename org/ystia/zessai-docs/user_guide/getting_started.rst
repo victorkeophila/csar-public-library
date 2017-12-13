@@ -36,7 +36,7 @@ Test a warning body
 
 ****
 
-.. Warning::
+**Warning**
 
   This is a warning body
 
