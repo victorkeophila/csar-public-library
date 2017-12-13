@@ -13,15 +13,15 @@ This section describes how to set up a basic application cluster using BDCF comp
 
 Test a thematic break with *
 
-* * * * *
+****
 
 Test a thematic break with _
 
-_ _ _ _ _
+____
 
 Test a thematic break with -
 
-- - - - -
+----
 
 .. role:: red
 
@@ -34,14 +34,13 @@ This text is :orange:`colored orange` and so is :orange:`this`
 
 Test a warning body
 
-* * * * *
+****
 
-.. role:: red
+.. Warning::
 
-:red:`Warning`
   This is a warning body
 
-* * * * *
+****
 
 .. _getting_started_requirements_section:
 
