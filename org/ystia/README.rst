@@ -7,9 +7,6 @@ Ystia CSAR library
 	:depth: 4
 
 
-**Ystia CSAR libray** is **TO BE COMPLETED .....**
-
-
 .. *********************************************************************************************************************
 
 .. _introduction_section:
@@ -21,19 +18,35 @@ Introduction
 Ystia CSAR library overview
 ===========================
 
+.. **Ystia CSAR libray** provides a packaged solution to create easily Big Data application clusters on demand.
+.. Deployment of Big Data applications can be done on a public Cloud (such as Amazon),
+.. or on a private cloud (such as OpenStack), on Bare-Metal or on HPC.
+..
+.. Big Data applications targeted by Ystia are:
+..
+.. - mainly **Hadoop** applications based on MapR_, Hortonworks_ or Cloudera_.
+.. - and **Log Analysis** applications based on Elastic_ components.
+..
+.. In addition, Ystia CSAR libray provides useful components such as:
+..
+.. - **SQL** and **Not Only SQL** database servers (MySQL_, MongoDB_, PostgreSQL_),
+.. - message brokers (Kafka_),
+.. - data science development environments (RStudio_, Jupyter_)
+.. - and other technical components such as **Java**, **Consul** (Consensus Systems), allowing detailed application
+..   architectures to be designed.
+..
+.. The components are connected together in application topologies.
+.. To simplify topology creation, Ystia provides **topology templates** that can be extended by your applications.
+..
+
 **Ystia CSAR libray** provides a packaged solution to create easily Big Data application clusters on demand.
 Deployment of Big Data applications can be done on a public Cloud (such as Amazon),
 or on a private cloud (such as OpenStack), on Bare-Metal or on HPC.
 
 Big Data applications targeted by Ystia are:
 
-- mainly **Hadoop** applications based on MapR_, Hortonworks_ or Cloudera_.
-- and **Log Analysis** applications based on Elastic_ components.
-
-In addition, Ystia CSAR libray provides useful components such as:
-
-- **SQL** and **Not Only SQL** database servers (MySQL_, MongoDB_, PostgreSQL_),
-- message brokers (Kafka_),
+- **Log Analysis** applications based on Elastic_ components.
+- message brokers (Kafka_, Nifi_),
 - data science development environments (RStudio_, Jupyter_)
 - and other technical components such as **Java**, **Consul** (Consensus Systems), allowing detailed application
   architectures to be designed.
@@ -50,6 +63,7 @@ To simplify topology creation, Ystia provides **topology templates** that can be
 .. _MapR: https://mapr.com/
 .. _MongoDB: https://www.mongodb.com/
 .. _MySQL: http://www.mysql.com/
+.. _Nifi: https://nifi.apache.org/
 .. _PostgreSQL: https://www.postgresql.org/
 .. _RStudio: https://www.rstudio.com/
 
@@ -62,9 +76,7 @@ Ystia is based on the following products:
 .. _Janus: http://TO_BE_COMPLETED/
 .. _Alien4Cloud: http://alien4cloud.github.io/
 
-**TO BE CONFIRMED .....**
-**AND**
-**TO BE COMPLETED .....**
+**TO BE CONFIRMED .....** and **TO BE COMPLETED .....**
 
 
 
@@ -92,15 +104,25 @@ YSTIA CSAR library requires:
 
 **TO BE COMPLETED**
 
+.. _getting_started_build_section:
+
+How to build an Ystia CSAR
+==========================
+
+**TO BE COMPLETED**
 
 .. _getting_started_samples_section:
 
 Welcome sample
 ==============
 
-**TO BE COMPLETED**
+The **Welcome** Ystia component is a very sample HTTP server.
+It can be used to create and deploy your first Alien4Cloud application and to check the Ystia installation.
 
+More information can be found under:
 
+- **org/ystia/samples/welcome** and
+- **org/ystia/samples/topologies/welcome_basic**
 
 .. *********************************************************************************************************************
 
@@ -118,62 +140,34 @@ Topologies
 Topologies for Log Analysis based on Elastic Stack
 ==================================================
 
-**TO BE COMPLETED.....**
++-------------------+----------------------------------------------+
+| **elk_basic**     | *org/ystia/topologies/elk_basic*             |
++-------------------+----------------------------------------------+
+| **elk_broker**    | *org/ystia/topologies/elk_broker*            |
++-------------------+----------------------------------------------+
+| **elk_ha**        | *org/ystia/topologies/elk_ha*                |
++-------------------+----------------------------------------------+
+| **elk_geonames**  | *org/ystia/topologies/elk_geonames*          |
++-------------------+----------------------------------------------+
 
++-------------------+----------------------------------------------+
+| **elk_beats**     | *org/ystia/samples/topologies/elk_beats*     |
++-------------------+----------------------------------------------+
+| **elk_heartbeat** | *org/ystia/samples/topologies/elk_heartbeat* |
++-------------------+----------------------------------------------+
+| **elk_dummylogs** | *org/ystia/samples/topologies/elk_dummylogs* |
++-------------------+----------------------------------------------+
+| **elk_nifi**      | *org/ystia/samples/topologies/elk_nifi*      |
++-------------------+----------------------------------------------+
+| **elk_twitter**   | *org/ystia/samples/topologies/elk_twitter*   |
++-------------------+----------------------------------------------+
 
-.. _topologies_mongodb_section:
+Topologies for Flink
+====================
 
-Topologies for MongoDB
-======================
-
-**TO BE COMPLETED.....**
-
-
-.. _topologies_mapr_section:
-
-Topologies for MapR Hadoop applications
-=======================================
-
-**TO BE COMPLETED.....**
-
-
-.. _topologies_hortonworks_section:
-
-Topologies for Hortonworks
-==========================
-
-**TO BE COMPLETED.....**
-
-
-.. _topologies_cloudera_section:
-
-Topologies for Cloudera
-=======================
-
-**TO BE COMPLETED.....**
-
-.. _topologies_web_crawling_section:
-
-Topologies for Web crawling based on MapR and Elastic Stack
-===========================================================
-
-**TO BE COMPLETED.....**
-
-
-.. _topologies_lambda_section:
-
-Topology for Lambda Architecture
-================================
-
-**TO BE COMPLETED.....**
-
-.. _topologies_kappa_section:
-
-Topology for Kappa Architecture
-===============================
-
-**TO BE COMPLETED.....**
-
++-----------+------------------------------+
+| **flink** | *org/ystia/topologies/flink* |
++-----------+------------------------------+
 
 
 .. *********************************************************************************************************************
@@ -188,79 +182,80 @@ Components
 Consensus systems
 =================
 
-**TO BE COMPLETED.....**
-
++------------+--------------------+
+| **Consul** | *org/ystia/consul* |
++------------+--------------------+
 
 ELK components
 ==============
 
-**TO BE COMPLETED.....**
++-------------------+---------------------------+
+| **Elasticsearch** | *org/ystia/elasticsearch* |
++-------------------+---------------------------+
+| **Logstash**      | *org/ystia/logstash*      |
++-------------------+---------------------------+
+| **Kibana**        | *org/ystia/kibana*        |
++-------------------+---------------------------+
+| **Beats**         | *org/ystia/beats*         |
++-------------------+---------------------------+
 
 
 Geolocation components
 ======================
 
-**TO BE COMPLETED.....**
++--------------+----------------------+
+| **GeoNames** | *org/ystia/logstash* |
++--------------+----------------------+
 
 
 Social network connectors
 =========================
 
-**TO BE COMPLETED.....**
++----------------------+----------------------+
+| **TwitterConnector** | *org/ystia/logstash* |
++----------------------+----------------------+
 
 
 Message brokers
 ===============
 
-**TO BE COMPLETED.....**
++-----------+-------------------+
+| **Kafka** | *org/ystia/kafka* |
++-----------+-------------------+
+| **Nifi**  | *org/ystia/nifi*  |
++-----------+-------------------+
 
 
 Stream & real-time processing
 =============================
 
-**TO BE COMPLETED.....**
++-----------+-------------------+
+| **Flink** | *org/ystia/flink* |
++-----------+-------------------+
 
 
 Studios for data scientists
 ===========================
 
-**TO BE COMPLETED.....**
-
-
-Web crawling components
-=======================
-
-**TO BE COMPLETED.....**
-
-
-Database servers
-================
-
-**TO BE COMPLETED.....**
-
-
-MapR Hadoop components
-======================
-
-**TO BE COMPLETED.....**
-
-
-Hortonworks Hadoop components
-=============================
-
-**TO BE COMPLETED.....**
-
-
-Cloudera Hadoop components
-==========================
-
-**TO BE COMPLETED.....**
++-------------+---------------------+
+| **Jupyter** | *org/ystia/jupyter* |
++-------------+---------------------+
+| **RStudio** | *org/ystia/rstudio* |
++-------------+---------------------+
 
 
 Utilities
 =========
 
-**TO BE COMPLETED.....**
++-------------+---------------------+
+| **HAProxy** | *org/ystia/haproxy* |
++-------------+---------------------+
+| **Java**    | *org/ystia/java*    |
++-------------+---------------------+
+| **Python**  | *org/ystia/python*  |
++-------------+---------------------+
+| **XFS**     | *org/ystia/xfs*     |
++-------------+---------------------+
 
 
 
