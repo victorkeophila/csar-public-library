@@ -17,7 +17,7 @@ imports:
   - org.alien4cloud.alien4cloud.config.orchestrator.cfy:1.4.0-SNAPSHOT
   - org.alien4cloud.cloudify.manager.pub:1.4.0-SNAPSHOT
   - org.alien4cloud.diamond.pub:1.4.0-SNAPSHOT
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
   - org.alien4cloud.alien4cloud.config.location_resources.on_demand:1.4.0-SNAPSHOT
   - org.alien4cloud.alien4cloud.config.csar:1.4.0-SNAPSHOT
   - alien-base-types:1.4.0

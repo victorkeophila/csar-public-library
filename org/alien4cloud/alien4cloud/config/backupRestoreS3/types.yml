@@ -8,7 +8,7 @@ metadata:
 imports:
   - org.alien4cloud.alien4cloud.pub:1.4.0-SNAPSHOT
   - org.alien4cloud.aws-cli.pub:1.4.0-SNAPSHOT
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
 
 relationship_types:
   org.alien4cloud.alien4cloud.config.backupRestoreS3.relationships.BackupRestoreS3DependsOnAwsCli:
@@ -102,7 +102,7 @@ metadata:
 imports:
   - org.alien4cloud.alien4cloud.pub:1.4.0-SNAPSHOT
   - org.alien4cloud.aws-cli.pub:1.4.0-SNAPSHOT
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
 
 relationship_types:
   org.alien4cloud.alien4cloud.config.backupRestoreS3.relationships.BackupRestoreS3DependsOnAwsCli:

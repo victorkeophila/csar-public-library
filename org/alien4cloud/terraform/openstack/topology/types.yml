@@ -9,7 +9,7 @@ description: |
       Sample topology to deploy a Compute with a new security group leveraging terraform.
 
 imports:
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
   - org.alien4cloud.terraform.openstack:1.4.0-SNAPSHOT
 
 topology_template:

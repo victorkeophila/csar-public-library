@@ -8,7 +8,7 @@ metadata:
 description: common part of all ystia components
 
 imports:
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
 
 node_types:
   org.ystia.nodes.Root:

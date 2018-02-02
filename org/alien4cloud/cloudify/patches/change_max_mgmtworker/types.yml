@@ -8,7 +8,7 @@ metadata:
 description: Fix AMQP client patch.
 
 imports:
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
   - alien-base-types:1.4.0
   - org.alien4cloud.cloudify.manager.pub:1.4.0-SNAPSHOT
   - org.alien4cloud.cloudify.patches.pub:1.4.0-SNAPSHOT

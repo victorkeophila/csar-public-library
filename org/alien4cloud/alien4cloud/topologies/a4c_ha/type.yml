@@ -17,7 +17,7 @@ imports:
   - org.alien4cloud.samba.samba_sh:1.4.0-SNAPSHOT
   - org.alien4cloud.alien4cloud.pub:1.4.0-SNAPSHOT
   - org.alien4cloud.nginx.nginx_sh:1.4.0-SNAPSHOT
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
   - org.alien4cloud.elasticsearch.pub:1.4.0-SNAPSHOT
   - org.alien4cloud.elasticsearch.ubuntu:1.4.0-SNAPSHOT
   - org.alien4cloud.java.pub:1.4.0-SNAPSHOT

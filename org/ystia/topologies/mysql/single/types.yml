@@ -6,7 +6,7 @@ metadata:
   template_author: Bull
 
 imports:
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
   - org.ystia.mysql.pub:3.0-SNAPSHOT
   - org.ystia.mysql.linux.bash:3.0-SNAPSHOT
 

@@ -8,7 +8,7 @@ metadata:
 description: MySQL RDBMS installation , tested with ami-ed82e39e (t2.medium)
 
 imports:
-  - tosca-normative-types:1.0.0-ALIEN20SM5
+  - tosca-normative-types:1.0.0-ALIEN20
 
 node_types:
   org.alien4cloud.mysql.pub.nodes.Mysql:
