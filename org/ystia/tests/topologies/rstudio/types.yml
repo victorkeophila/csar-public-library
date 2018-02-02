@@ -6,8 +6,8 @@ metadata:
   template_author: Bull
 
 imports:
-  - tosca-normative-types:1.0.0-ALIEN14
-  - alien-extended-storage-types:1.4.1-SNAPSHOT
+  - tosca-normative-types:1.0.0-ALIEN20
+  - alien-extended-storage-types:2.0.0-SNAPSHOT
   - org.ystia.common:3.0-SNAPSHOT
   - org.ystia.java.pub:3.0-SNAPSHOT
   - org.ystia.java.linux.bash:3.0-SNAPSHOT

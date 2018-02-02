@@ -9,7 +9,7 @@ metadata:
 # TODO alien-extended-storage-types version 1.4.1-SNAPSHOT imported to work araound the known issue SUPALIEN-1011
 imports:
   - tosca-normative-types:1.0.0-ALIEN20
-  - alien-extended-storage-types:2.0.0-SM5
+  - alien-extended-storage-types:2.0.0-SNAPSHOT
 
   - org.ystia.common:3.0-SNAPSHOT
   - org.ystia.java.pub:3.0-SNAPSHOT
