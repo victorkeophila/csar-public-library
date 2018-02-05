@@ -41,6 +41,13 @@ Test a warning body
 
 ****
 
+.. note::
+   This is a note text.
+
+.. warning::
+   This is a warning text.
+
+
 .. _getting_started_requirements_section:
 
 Requirements
